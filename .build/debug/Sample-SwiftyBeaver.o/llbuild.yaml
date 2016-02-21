@@ -1,0 +1,29 @@
+client:
+  name: swift-build
+
+tools: {}
+
+targets:
+  "": [<Sample-SwiftyBeaver>]
+  Sample-SwiftyBeaver: [<Sample-SwiftyBeaver>]
+
+commands:
+  <Sample-SwiftyBeaver-swiftc>:
+    tool: swift-compiler
+    executable: "/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-02-08-a.xctoolchain/usr/bin/swiftc"
+    inputs: ["/Users/eirny/Developer/Sample-Swift/Sources/main.swift"]
+    outputs: ["<Sample-SwiftyBeaver-swiftc>","/Users/eirny/Developer/Sample-Swift/.build/debug/SampleSwiftyBeaver.swiftmodule","/Users/eirny/Developer/Sample-Swift/.build/debug/Sample-SwiftyBeaver.o/Sources/main.swift.o"]
+    module-name: "SampleSwiftyBeaver"
+    module-output-path: "/Users/eirny/Developer/Sample-Swift/.build/debug/SampleSwiftyBeaver.swiftmodule"
+    is-library: false
+    sources: ["/Users/eirny/Developer/Sample-Swift/Sources/main.swift"]
+    objects: ["/Users/eirny/Developer/Sample-Swift/.build/debug/Sample-SwiftyBeaver.o/Sources/main.swift.o"]
+    import-paths: ["/Users/eirny/Developer/Sample-Swift/.build/debug"]
+    temps-path: "/Users/eirny/Developer/Sample-Swift/.build/debug/Sample-SwiftyBeaver.o/Sample-SwiftyBeaver"
+    other-args: ["-j8","-Onone","-g","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-I","/usr/local/include","-D","SWIFT_PACKAGE"]
+  <Sample-SwiftyBeaver>:
+    tool: shell
+    inputs: ["<Sample-SwiftyBeaver-swiftc>","/Users/eirny/Developer/Sample-Swift/.build/debug/Sample-SwiftyBeaver.o/Sources/main.swift.o","/Users/eirny/Developer/Sample-Swift/.build/debug/SwiftyBeaver.a"]
+    outputs: ["<Sample-SwiftyBeaver>","/Users/eirny/Developer/Sample-Swift/.build/debug/Sample-SwiftyBeaver"]
+    args: ["/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-02-08-a.xctoolchain/usr/bin/swiftc","-o","/Users/eirny/Developer/Sample-Swift/.build/debug/Sample-SwiftyBeaver","/Users/eirny/Developer/Sample-Swift/.build/debug/Sample-SwiftyBeaver.o/Sources/main.swift.o","-target","x86_64-apple-macosx10.10","-Xlinker","-all_load","-g","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","/Users/eirny/Developer/Sample-Swift/.build/debug/SwiftyBeaver.a","-L/usr/local/lib"]
+    description: "Linking Executable:  .build/debug/Sample-SwiftyBeaver"

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0-dev (LLVM a7663bb722, Clang 4ca3c7fa28, Swift 1c2f40e246)"
+options: "3c1ae57ce5a6e72d834c1fa0d090d3ed"
+build_time: [509349017, 931641000]
+inputs:
+  "/Users/eirny/Developer/Sample-Swift/Sources/main.swift": [509347969, 0]

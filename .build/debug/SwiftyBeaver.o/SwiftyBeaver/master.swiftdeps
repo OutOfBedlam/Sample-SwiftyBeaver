@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.0-dev (LLVM a7663bb722, Clang 4ca3c7fa28, Swift 1c2f40e246)"
+options: "ab86f28bec1d01ef7b7e6c999daf2e8c"
+build_time: [509349238, 530340000]
+inputs:
+  "/Users/eirny/Developer/Sample-SwiftyBeaver/Packages/SwiftyBeaver-0.3.3/sources/BaseDestination.swift": [509347594, 0]
+  "/Users/eirny/Developer/Sample-SwiftyBeaver/Packages/SwiftyBeaver-0.3.3/sources/ConsoleDestination.swift": [509347594, 0]
+  "/Users/eirny/Developer/Sample-SwiftyBeaver/Packages/SwiftyBeaver-0.3.3/sources/FileDestination.swift": [509347594, 0]
+  "/Users/eirny/Developer/Sample-SwiftyBeaver/Packages/SwiftyBeaver-0.3.3/sources/SwiftyBeaver.swift": [509347594, 0]
