@@ -16,7 +16,7 @@ install:
     - wget https://swift.org/builds/$SWIFT_BRANCH/`echo $LINUX_VERSION|tr -d .`/$SWIFT_VERSION/$SWIFT_VERSION-$LINUX_VERSION.tar.gz
     - tar xzf $SWIFT_VERSION-$LINUX_VERSION.tar.gz
     - export PATH=${PWD}/$SWIFT_VERSION-$LINUX_VERSION/usr/bin:"${PATH}"
-    - cd Sample-Blackfish
+    - cd Sample-SwiftyBeaver
 script:
     - swift --version
     - swift build -c release
